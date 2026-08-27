@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darksiders 2 Wiki</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    body {
+        margin: 0;
+        background-image: 
+            linear-gradient(rgba(5, 15, 10, 0.75), rgba(5, 15, 10, 0.85)),
+            url('../HTML/template.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: #e8e8e8;
+        min-height: 100vh;
+    }
+</style>
+    <link href="baixados.webp" rel="icon" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Darksiders 2 Wiki</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="armas.html">Armas</a></li>
+                <li><a href="bosses.html">Bosses</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>Bem-vindo à wiki do Darksiders 2!</p>
+
+        <section aria-labelledby="sobre-heading">
+            <h2 id="sobre-heading">Sobre o Jogo</h2>
+            <p>
+                Darksiders II é um jogo eletrônico de ação-aventura e hack and slash
+                desenvolvido pela Vigil Games e publicado originalmente pela THQ,
+                lançado em agosto de 2012. A narrativa segue Morte (Death), um dos
+                Cavaleiros do Apocalipse, em uma missão pessoal para provar a
+                inocência de seu irmão, Guerra, após este ser condenado pelo
+                Conselho das Chamas.
+            </p>
+        </section>
+
+        <section aria-labelledby="teoria-heading">
+            <h2 id="teoria-heading">Envie sua Teoria sobre a Lore</h2>
+            <p>Tem alguma ideia sobre a história de Darksiders 2? Compartilhe com a comunidade!</p>
+
+            <form novalidate>
+                <fieldset>
+                    <legend>Dados do colaborador</legend>
+
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            required
+                            minlength="2"
+                            autocomplete="name"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            autocomplete="email"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="idade">Idade:</label>
+                        <input
+                            type="number"
+                            id="idade"
+                            name="idade"
+                            min="10"
+                            max="120"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="data-envio">Data de envio:</label>
+                        <input
+                            type="date"
+                            id="data-envio"
+                            name="data-envio"
+                        >
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sobre a teoria</legend>
+
+                    <div>
+                        <label for="personagem">Personagem favorito:</label>
+                        <select id="personagem" name="personagem">
+                            <option value="">Selecione um personagem</option>
+                            <option value="morte">Morte</option>
+                            <option value="guerra">Guerra</option>
+                            <option value="furia">Fúria</option>
+                            <option value="discordia">Discórdia</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <span id="spoiler-legend">Sua teoria contém spoilers?</span>
+                        <div role="group" aria-labelledby="spoiler-legend">
+                            <label for="spoiler-sim">
+                                <input
+                                    type="radio"
+                                    id="spoiler-sim"
+                                    name="spoiler"
+                                    value="sim"
+                                >
+                                Sim
+                            </label>
+                            <label for="spoiler-nao">
+                                <input
+                                    type="radio"
+                                    id="spoiler-nao"
+                                    name="spoiler"
+                                    value="nao"
+                                >
+                                Não
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="teoria">Sua teoria (mínimo 10 caracteres):</label>
+                        <textarea
+                            id="teoria"
+                            name="teoria"
+                            required
+                            minlength="10"
+                            rows="4"
+                        ></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Enviar teoria</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Exemplo de alerta com botão de ícone acessível (Desafio Extra) -->
+    <div role="alert" id="alerta-exemplo">
+        <p>Obrigado por contribuir com a wiki!</p>
+        <button type="button" aria-label="Fechar alerta">✕</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Darksiders 2 Wiki. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
